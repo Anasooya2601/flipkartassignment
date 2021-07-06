@@ -1,6 +1,6 @@
-import Header from './components/Header';
-import Card from './components/Card';
-import Basket from './components/Basket';
+import Header from './components/Header/header';
+import Main from './components/Products/Productmain';
+import Basket from './components/Cart/Item';
 import data from './data';
 import { useState } from 'react';
 function App() {
@@ -34,7 +34,7 @@ function App() {
     <div className="App">
       <Header countCartItems={cartItems.length}></Header>
       <div className="row">
-        <Card products={products} onAdd={onAdd}></Card>
+        <Main products={products} onAdd={onAdd}></Main>
         <Basket
           cartItems={cartItems}
           onAdd={onAdd}

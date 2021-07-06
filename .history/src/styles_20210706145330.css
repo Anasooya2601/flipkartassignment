@@ -18,13 +18,13 @@ h3 {
 a {
   text-decoration: none;
 }
-/* .row {
+.row {
   display: flex;
   justify-content: space-between;
-} */
-/* .row.center {
+}
+.row.center {
   align-items: center;
-} */
+}
 .col-1 {
   flex: 1;
 }
@@ -49,12 +49,12 @@ button {
   margin: 0.1rem;
   border-radius: 0.5rem;
   border: 0.1rem #404040 solid;
-  background-color: #f9f9f9;
+  background-color: #f0c040;
   width: 100%;
   cursor: pointer;
 }
 button.add {
-  background-color: #f0f0f0;
+  background-color: #40c0f0;
   width: 1.5rem;
 }
 button.remove {

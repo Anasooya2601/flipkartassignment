@@ -1,6 +1,6 @@
 import Header from './components/Header';
+import Main from './components/Card';
 import Card from './components/Card';
-import Basket from './components/Basket';
 import data from './data';
 import { useState } from 'react';
 function App() {
@@ -35,15 +35,15 @@ function App() {
       <Header countCartItems={cartItems.length}></Header>
       <div className="row">
         <Card products={products} onAdd={onAdd}></Card>
-        <Basket
+        <Card
           cartItems={cartItems}
           onAdd={onAdd}
           onRemove={onRemove}
-        ></Basket>
+        ></Card>
       </div>
     </div>
   );
 }
 
-export default App;
+export default App
 
