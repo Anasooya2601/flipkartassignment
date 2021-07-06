@@ -9,7 +9,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
+    flexGrow: 4,
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -17,19 +17,13 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
   },
-
 }));
 
-export default function Header(props) {
+export default function Header() {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
-          <div>
-        <a href="#/">
-          
-        </a>
-      </div>
       <AppBar position="static">
         <Toolbar>
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
@@ -39,19 +33,16 @@ export default function Header(props) {
            FLIPKART
           </Typography>
           <a href="#/cart">
-              
-              🛒{' '}
+          Cart{' '}
           {props.countCartItems ? (
             <button className="badge">{props.countCartItems}</button>
           ) : (
             ''
           )}
         </a>{' '}
-          <Button color="inherit"><i class="fa fa-shopping-basket" aria-hidden="true"></i></Button>
         </Toolbar>
       </AppBar>
     </div>
   );
 }
-
  

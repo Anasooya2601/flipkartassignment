@@ -39,8 +39,7 @@ export default function Header(props) {
            FLIPKART
           </Typography>
           <a href="#/cart">
-              
-              🛒{' '}
+            🛒{''}
           {props.countCartItems ? (
             <button className="badge">{props.countCartItems}</button>
           ) : (
@@ -53,5 +52,3 @@ export default function Header(props) {
     </div>
   );
 }
-
- 
